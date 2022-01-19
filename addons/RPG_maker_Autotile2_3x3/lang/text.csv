@@ -1,0 +1,141 @@
+,en,ja
+Loaded Images:,Loaded Images:,ツクール式タイル画像を読み込む
+Load More,Load More,画像を追加
+Tile presets:,Tile presets:,タイル 形式
+AUTOTILE XP,AUTOTILE XP,XP オートタイル
+"AUTOTILE VXACE FLOOR","AUTOTILE VXACE FLOOR","VXACEオートタイル 床"
+"AUTOTILE VXACE WALL","AUTOTILE VXACE WALL","VXACEオートタイル 壁"
+"AUTOTILE VXACE WATERFALL","AUTOTILE VXACE WATERFALL","VXACEオートタイル 滝"
+"AUTOTILE MV FLOOR","AUTOTILE MV FLOOR","MVオートタイル 床"
+"AUTOTILE MV WALL","AUTOTILE MV WALL","MVオートタイル 壁"
+"AUTOTILE MV WATERFALL","AUTOTILE MV – WATERFALL","MVオートタイル 滝"
+CUSTOM AUTOTILE,CUSTOM AUTOTILE,カスタムオートタイル
+SINGLE TILE,SINGLE TILE,シングルタイル
+PREVIEW,PREVIEW,プレビュー
+columns:,columns:,列 Cols
+rows:,rows:,行 Rows
+Size of tiles:,Size of tiles:,タイルサイズ
+width:,width:,横幅 Width
+height:,height:,縦幅 Height
+Layout:,Layout:,レイアウト:
+Old Style,Old Style,Old Style
+New Style,New Style,New Style
+Floor,Floor,床
+Wall,Wall,壁
+Waterfall,Waterfall,滝
+image Selected:,image Selected:,(選択中の画像) タイルを選択する
+Created Tiles:,Created Tiles:,作成済みタイル
+Remove Selected,Remove Selected,選択中のタイルを削除する
+Current Selection,Current Selection,選択中のタイル
+Create Tile,Create Tile,タイル作成
+Select Fast Export Preset,Select Fast Export Preset,Select Fast Export Preset
+Fast Export,Fast Export,一括変換出力
+RPG Maker VX/ACE A1 (Animations 512x384) to tilemap,RPG Maker VX/ACE A1 (Animations 512x384) to tilemap,RPG Maker VX/ACE A1 (Animations 512x384) to tilemap
+RPG Maker VX/ACE A2 (Floors 512x384) to tilemap,RPG Maker VX/ACE A2 (Floors 512x384) to tilemap,RPG Maker VX/ACE A2 (Floors 512x384) to tilemap
+RPG Maker VX/ACE A3 (Buildings 512x216) to tilemap,RPG Maker VX/ACE A3 (Buildings 512x216) to tilemap,RPG Maker VX/ACE A3 (Buildings 512x216) to tilemap
+RPG Maker VX/ACE A4 (Walls 512x480) to tilemap,RPG Maker VX/ACE A4 (Walls 512x480) to tilemap,RPG Maker VX/ACE A4 (Walls 512x480) to tilemap
+RPG Maker VX/ACE A5 (Single Tiles 256x512) to tilemap,RPG Maker VX/ACE A5 (Single Tiles 256x512) to tilemap,RPG Maker VX/ACE A5 (Single Tiles 256x512) to tilemap
+RPG Maker VX/ACE B-E (Single Tiles 512x512) to tilemap,RPG Maker VX/ACE B-E (Single Tiles 512x512) to tilemap,RPG Maker VX/ACE B-E (Single Tiles 512x512) to tilemap
+RPG Maker MV A1 (Animations 768x576) to tilemap,RPG Maker MV A1 (Animations 768x576) to tilemap,RPG Maker MV A1 (Animations 768x576) to tilemap
+RPG Maker MV A2 (Floors 768x576) to tilemap,RPG Maker MV A2 (Floors 768x576) to tilemap,RPG Maker MV A2 (Floors 768x576) to tilemap
+RPG Maker MV A3 (Buildings 768x384) to tilemap,RPG Maker MV A3 (Buildings 768x384) to tilemap,RPG Maker MV A3 (Buildings 768x384) to tilemap
+RPG Maker MV A4 (Walls 768x720) to tilemap,RPG Maker MV A4 (Walls 768x720) to tilemap,RPG Maker MV A4 (Walls 768x720) to tilemap
+RPG Maker MV A5 (Single Tiles 384x768) to tilemap,RPG Maker MV A5 (Single Tiles 384x768) to tilemap,RPG Maker MV A5 (Single Tiles 384x768) to tilemap
+RPG Maker MV B-E (Single Tiles 768x768) to tilemap,RPG Maker MV B-E (Single Tiles 768x768) to tilemap,RPG Maker MV B-E (Single Tiles 768x768) to tilemap
+RPG Maker XP (width and height divisible by 32) tileset to tilemap,RPG Maker XP (width and height divisible by 32) tileset to tilemap,RPG Maker XP (width and height divisible by 32) tileset to tilemap
+RPG Maker XP autotile (96x128) to tilemap,RPG Maker XP autotile (96x128) to tilemap,RPG Maker XP autotile (96x128) to tilemap
+RPG Maker XP autotile animated (384x128) to tilemap,RPG Maker XP autotile animated (384x128) to tilemap,RPG Maker XP autotile animated (384x128) to tilemap
+Preview Tile,Preview Tile,Preview Tile
+Save Autotiles in:,Save Autotiles in:,生成後タイル画像の保存場所
+Save Tileset in:,Save Tileset in:,tilesetのtresの保存場所
+select,select,選択
+"SAVE
+ALL","SAVE
+ALL","SAVE
+ALL"
+Window title,Window title,Window title
+Current Path:,Current Path:,現在のファイルパス
+Select an Image,Select an Image,画像ファイルを選択する
+"Select Folder to save %s"" % id","Select Folder to save %s"" % id","Select Folder to save %s"" % id"
+File Selected:,File Selected:,選択したファイル
+no file selected,no file selected,ファイル選択なし
+New Directory:,New Directory:,新規ディレクトリ
+Saving all tiles to disk. wait a moment please,Saving all tiles to disk. wait a moment please,ファイルを保存中です。少々お待ちください
+SAVING…,SAVING…,保存中……
+TILES,TILES,タイル
+Preview Tile,Preview Tile,プレビュー
+Collision type,Collision type,コリジョンタイプ
+No Collision,No Collision,コリジョンなし
+Collision Simple,Collision Simple,矩形コリジョン
+Collision Complex,Collision Complex,複雑なコリジョン
+%,%,%
+Occlusion,Occlusion,Occlusion
+Upload images from your hard drives,Upload images from your hard drives,hoge
+"Upload images from your hard drives","Upload images from your hard drives","hoge"
+"Width of the tile","Width of the tile","hoge"
+"Height of the tile","Height of the tile","hoge"
+"Pattern layout  for the Autotiles:
+
+- Old Style : Autotiles from RPG Maker XP
+- New Style: Autotiles from RPG Maker VX, ACE and MV","Pattern layout  for the Autotiles:
+
+- Old Style : Autotiles from RPG Maker XP
+- New Style: Autotiles from RPG Maker VX, ACE and MV","hoge"
+"Type of the Autotile:
+
+-Floor: Autotiles used to draw grounds
+- Wall: Autotiles used to draw walls
+- Waterfall: Autotiles used to draw waterfalls","Type of the Autotile:
+
+-Floor: Autotiles used to draw grounds
+- Wall: Autotiles used to draw walls
+- Waterfall: Autotiles used to draw waterfalls","hoge"
+"- [color=#FF0000]Left Click[/color]:
+     Fit the image to the width and height of the canvas
+- [color=#FF0000]CTRL + Left Click[/color]:
+     Fit the image to the height of the canvas
+- [color=#FF0000]ALT + Left Click[/color]:
+     Fit the image to the width of the canvas
+- [color=#FF0000]CTRL + Mouse Wheel in canvas[/color]:
+     Mouse Wheel Up:          Zoom In
+     Mouse Wheel Down:     Zoom Out","- [color=#FF0000]Left Click[/color]:
+     Fit the image to the width and height of the canvas
+- [color=#FF0000]CTRL + Left Click[/color]:
+     Fit the image to the height of the canvas
+- [color=#FF0000]ALT + Left Click[/color]:
+     Fit the image to the width of the canvas
+- [color=#FF0000]CTRL + Mouse Wheel in canvas[/color]:
+     Mouse Wheel Up:          Zoom In
+     Mouse Wheel Down:     Zoom Out","hoge"
+"Remove the tile selected","Remove the tile selected","hoge"
+"Change the name, collision type, occlusion and animation speed of the selected tile.
+You can [color=#FF0000]double-click[/color] on any item on the list to perform this same action","Change the name, collision type, occlusion and animation speed of the selected tile.
+You can [color=#FF0000]double-click[/color] on any item on the list to perform this same action","hoge"
+"Move the autotiles selected to up","Move the autotiles selected to up","hoge"
+"Move the autotiles selected to down","Move the autotiles selected to down","hoge"
+"Combine the autotiles selected
+into a new autotile
+(sorted top to bottom)
+
+You can only combine
+tiles of the same type and
+size","Combine the autotiles selected
+into a new autotile
+(sorted top to bottom)
+
+You can only combine
+tiles of the same type and
+size","hoge"
+"Replace the selected autotiles with
+an uniq animated autotile
+(sorted top to bottom)
+
+You can only combine
+tiles of the same type and
+size","Replace the selected autotiles with
+an uniq animated autotile
+(sorted top to bottom)
+
+You can only combine
+tiles of the same type and
+size","hoge"

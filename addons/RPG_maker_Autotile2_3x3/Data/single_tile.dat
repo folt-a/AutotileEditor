@@ -6,6 +6,7 @@
 #TILE_ID#/tile_mode = 0
 #OCCLUDER#
 #TILE_ID#/occluder_offset = Vector2( 0, 0 )
+#NAVIGATION#
 #TILE_ID#/navigation_offset = Vector2( 0, 0 )
 #TILE_ID#/shape_offset = Vector2( 0, 0 )
 #TILE_ID#/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )

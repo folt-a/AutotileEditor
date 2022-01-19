@@ -30,6 +30,7 @@ onready var create_autotile_dialog		= $create_autotile_dialog
 onready var create_autotile_dialog_t	= $create_autotile_dialog/LineEdit
 onready var create_autotile_dialog_c	= $create_autotile_dialog/OptionButton
 onready var create_autotile_dialog_o	= $create_autotile_dialog/CheckButton
+onready var create_autotile_dialog_n	= $create_autotile_dialog/CheckButton2
 onready var create_autotile_dialog_s	= $create_autotile_dialog/SpinBox
 onready var edit_autotile_button		= $AutoTileList/edit_autotile_button
 onready var move_autotiles_up_button	= $AutoTileList/move_autotile_up_button
@@ -49,6 +50,7 @@ onready var edit_autotile_dialog		= $edit_autotile_dialog
 onready var name_autotile_dialog_b		= $edit_autotile_dialog/LineEdit
 onready var collision_autotile_dialog_b	= $edit_autotile_dialog/OptionButton
 onready var occlusion_autotile_dialog_b	= $edit_autotile_dialog/CheckButton
+onready var navigation_autotile_dialog_b= $edit_autotile_dialog/CheckButton2
 onready var speed_autotile_dialog_b		= $edit_autotile_dialog/SpinBox
 onready var percent_autotile_dialog_b	= $edit_autotile_dialog/SpinBox2
 onready var fast_export_button			= $Panel/fast_export_button
@@ -62,6 +64,7 @@ onready var ultimate_dialog_preview_t	= $ultimate_revision_dialog/WindowDialog/H
 onready var ultimate_dialog_collision	= $ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel/OptionButton2
 onready var ultimate_dialog_percent		= $ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel/SpinBox3
 onready var ultimate_dialog_occlusion	= $ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel/CheckButton2
+onready var ultimate_dialog_navigation	= $ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel/CheckButton3
 
 var save_panel_scene = preload("save_panel.tscn")
 
@@ -96,6 +99,7 @@ class Autotile:
 	var animation_delay		:= 0.18
 	var collision_type		:= 0
 	var occlusion			:= false
+	var navigation			:= false
 	var collision_percent	:= 100
 	
 	func duplicate() -> Autotile:
@@ -109,6 +113,7 @@ class Autotile:
 		autotile.tile_height 		= tile_height
 		autotile.collision_type		= collision_type
 		autotile.occlusion			= occlusion
+		autotile.navigation			= navigation
 		autotile.collision_percent	= collision_percent
 		return autotile
 		
@@ -816,12 +821,14 @@ func _on_create_autotile_dialog_ok_button_pressed() -> void:
 	var text = create_autotile_dialog_t.text
 	var collision_type = create_autotile_dialog_c.get_selected_id()
 	var occlusion = create_autotile_dialog_o.pressed
+	var navigation = create_autotile_dialog_n.pressed
 	var collision_percent = create_autotile_dialog_s.value
 	if text.length() > 0:
 		var new_autotile = Autotile.new()
 		new_autotile.name = get_fix_name_for_paths(text)
 		new_autotile.collision_type = collision_type
 		new_autotile.occlusion = occlusion
+		new_autotile.navigation = navigation
 		new_autotile.collision_percent = collision_percent
 		if preset_button.selected != 8:
 			new_autotile.type = (config_layout_button.get_selected_id() +
@@ -1153,6 +1160,7 @@ func _on_edit_autotile_button_button_up() -> void:
 	var autotile_animation_delay 	= data_tileset.tiles[ids[-1]].animation_delay
 	var collision_type				= data_tileset.tiles[ids[-1]].collision_type
 	var occlusion					= data_tileset.tiles[ids[-1]].occlusion
+	var navigation					= data_tileset.tiles[ids[-1]].navigation
 	var collision_percent			= data_tileset.tiles[ids[-1]].collision_percent
 	name_autotile_dialog_b.text = autotile_name
 	speed_autotile_dialog_b.value = autotile_animation_delay
@@ -1160,6 +1168,7 @@ func _on_edit_autotile_button_button_up() -> void:
 	percent_autotile_dialog_b.editable = collision_type == 1
 	collision_autotile_dialog_b.select(collision_type)
 	occlusion_autotile_dialog_b.pressed = occlusion
+	navigation_autotile_dialog_b.pressed = navigation
 	var pos = get_global_mouse_position() + Vector2(31, 26)
 	pos.x -= edit_autotile_dialog.rect_size.x
 	edit_autotile_dialog.rect_global_position = pos
@@ -1188,10 +1197,12 @@ func _on_edit_autotile_ok_button_button_up():
 	var autotile_animation_delay 	= speed_autotile_dialog_b.value
 	var collision_type				= collision_autotile_dialog_b.get_selected_id()
 	var occlusion					= occlusion_autotile_dialog_b.pressed
+	var navigation					= navigation_autotile_dialog_b.pressed
 	var collision_percent			= percent_autotile_dialog_b.value
 	data_tileset.tiles[id].animation_delay = autotile_animation_delay
 	data_tileset.tiles[id].collision_type = collision_type
 	data_tileset.tiles[id].occlusion = occlusion
+	data_tileset.tiles[id].navigation = navigation
 	data_tileset.tiles[id].collision_percent = collision_percent
 	timer.stop()
 	timer.wait_time = autotile_animation_delay
@@ -1212,6 +1223,7 @@ func _on_autotiles_list_gui_input(event: InputEvent):
 			var autotile_animation_delay 	= data_tileset.tiles[id].animation_delay
 			var collision_type				= data_tileset.tiles[id].collision_type
 			var occlusion					= data_tileset.tiles[id].occlusion
+			var navigation					= data_tileset.tiles[id].navigation
 			var collision_percent			= data_tileset.tiles[id].collision_percent
 			name_autotile_dialog_b.text = autotile_name
 			speed_autotile_dialog_b.value = autotile_animation_delay
@@ -1219,6 +1231,7 @@ func _on_autotiles_list_gui_input(event: InputEvent):
 			percent_autotile_dialog_b.value = collision_percent
 			percent_autotile_dialog_b.editable = collision_type == 1
 			occlusion_autotile_dialog_b.pressed = occlusion
+			navigation_autotile_dialog_b.pressed = navigation
 			var pos = get_global_mouse_position() + Vector2(31, 26)
 			pos.x -= edit_autotile_dialog.rect_size.x
 			edit_autotile_dialog.rect_global_position = pos
@@ -1862,6 +1875,7 @@ func save_all(user_data = null) -> void:
 							data_rects[im_data.id].animation_delay = im_data.animation_delay
 							data_rects[im_data.id].collision_type = im_data.collision_type
 							data_rects[im_data.id].occlusion = im_data.occlusion
+							data_rects[im_data.id].navigation = im_data.navigation
 							data_rects[im_data.id].tile_size = Vector2(tile_width, tile_height)
 							data_rects[im_data.id].collision_percent = im_data.collision_percent
 							img.blit_rect(im, src_rect, dest)
@@ -1888,6 +1902,7 @@ func save_all(user_data = null) -> void:
 						data_rects[im_data.id].animation_delay = im_data.animation_delay
 						data_rects[im_data.id].collision_type = im_data.collision_type
 						data_rects[im_data.id].occlusion = im_data.occlusion
+						data_rects[im_data.id].navigation = im_data.navigation
 						data_rects[im_data.id].tile_size = Vector2(tile_width, tile_height)
 						data_rects[im_data.id].collision_percent = im_data.collision_percent
 						img.blit_rect(im_data.img, src_rect, dest)
@@ -1952,6 +1967,7 @@ func save_all(user_data = null) -> void:
 						data_rects[img_data.id].path = img_data.path
 						data_rects[img_data.id].collision_type = img_data.collision_type
 						data_rects[img_data.id].occlusion = img_data.occlusion
+						data_rects[img_data.id].navigation = img_data.navigation
 						data_rects[img_data.id].tile_size = Vector2(tile_width, tile_height)
 						data_rects[img_data.id].collision_percent = img_data.collision_percent
 						data_rects[img_data.id].animation_delay = img_data.animation_delay
@@ -1966,6 +1982,7 @@ func save_all(user_data = null) -> void:
 							Vector2.ZERO, img_data.img.get_size())
 						data_rects[img_data.id].collision_type = img_data.collision_type
 						data_rects[img_data.id].occlusion = img_data.occlusion
+						data_rects[img_data.id].navigation = img_data.navigation
 						data_rects[img_data.id].tile_size = Vector2(tile_width, tile_height)
 						data_rects[img_data.id].collision_percent = img_data.collision_percent
 						data_rects[img_data.id].animation_delay = img_data.animation_delay
@@ -2030,6 +2047,35 @@ func save_all(user_data = null) -> void:
 				resource_id += 1
 			else:
 				text = text.replace("#OCCLUDER#\n", "")
+			if rect.navigation:
+				var pol
+				if rect.type == -1:
+					pol = str(_create_collision_polygon(rect.path, r))
+				else:
+					pol = str(_create_simple_collision_polygon(rect.tile_size))
+				pol = pol.replace("[", "")
+				pol = pol.replace("]", "")
+				pol = pol.replace("(", "")
+				pol = pol.replace(")", "")
+				header += "[sub_resource type=\"NavigationPolygon\" id=%s]\n" % \
+					resource_id
+				header += "vertices = PoolVector2Array( %s )\n" % pol
+				header += "polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]\n\n"
+				var new_text = ""
+				if rect.type == -1:
+					 new_text = "#TILE_ID#/navpoly = SubResource( %s )" % resource_id
+				else:
+					for y in r.size.y / rect.tile_size.y:
+						for x in r.size.x / rect.tile_size.x:
+							if new_text != "": new_text += ", "
+							new_text += "Vector2( %s, %s), " % \
+								[x, y]
+							new_text += "SubResource( %s )" % str(resource_id)
+					new_text = "#TILE_ID#/autotile/navpoly_map = [ %s ]\n" % new_text
+				text = text.replace("#NAVIGATION#", new_text)
+				resource_id += 1
+			else:
+				text = text.replace("#NAVIGATION#\n", "")
 			if rect.collision_type == 0: # NO COLLISION
 				text = text.replace("#SHAPEEXTENDES#", "")
 				text = text.replace("#SHAPE#\n", "")
@@ -2214,6 +2260,7 @@ func get_image_for_tiles(data_tiles : Dictionary, key : String) -> Array:
 					"animation_delay"	: tile.animation_delay,
 					"collision_type"	: tile.collision_type,
 					"occlusion"			: tile.occlusion,
+					"navigation"		: tile.navigation,
 					"collision_percent"	: tile.collision_percent,
 				})
 		if data_tiles[key].individual.size() > 0:
@@ -2228,6 +2275,7 @@ func get_image_for_tiles(data_tiles : Dictionary, key : String) -> Array:
 					"animation_delay"	: tile.animation_delay,
 					"collision_type"	: tile.collision_type,
 					"occlusion"			: tile.occlusion,
+					"navigation"		: tile.navigation,
 					"collision_percent"	: tile.collision_percent,
 				})
 	return result
@@ -2350,12 +2398,14 @@ func update_ultimate_autotile_preview(index: int) -> void:
 		autotile.collision_type = ultimate_dialog_collision.get_selected_id()
 		autotile.collision_percent = ultimate_dialog_percent.value
 		autotile.occlusion = ultimate_dialog_occlusion.pressed
+		autotile.navigation = ultimate_dialog_navigation.pressed
 	var autotile = ultimate_tiles[index]
 	var result_image = get_tile(autotile)
 	ultimate_dialog_preview_t.texture = load_external_texture(result_image)
 	ultimate_dialog_collision.select(autotile.collision_type)
 	ultimate_dialog_percent.value = autotile.collision_percent
 	ultimate_dialog_occlusion.pressed = autotile.occlusion
+	ultimate_dialog_navigation.pressed = autotile.navigation
 	ultimate_dialog_percent.editable = autotile.collision_type == 1
 	ultimate_last_tile = index
 	no_action = false
@@ -2373,6 +2423,11 @@ func _on_ultimate_occlusion_CheckButton_toggled(button_pressed: bool) -> void:
 	var autotile = ultimate_tiles[index]
 	autotile.occlusion = button_pressed
 
+func _on_ultimate_navigation_CheckButton_toggled(button_pressed: bool) -> void:
+	if no_action: return
+	var index = ultimate_dialog_itemlist.get_selected_items()[0]
+	var autotile = ultimate_tiles[index]
+	autotile.navigation = button_pressed
 
 func _on_ultimate_collision_type_OptionButton_item_selected(collision_type : int) -> void:
 	if no_action: return

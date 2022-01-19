@@ -1,49 +1,44 @@
 [gd_scene load_steps=123 format=2]
 
-[ext_resource path="Graphics/center_button_normal.png" type="Texture" id=1]
-[ext_resource path="CreateAutoTile.gd" type="Script" id=2]
-[ext_resource path="custom_scrollbar.tscn" type="PackedScene" id=3]
-[ext_resource path="Graphics/cursors.png" type="Texture" id=4]
-[ext_resource path="theme.tres" type="Theme" id=5]
-[ext_resource path="Graphics/canvas_background.png" type="Texture" id=6]
-[ext_resource path="Graphics/background1.png" type="Texture" id=7]
-[ext_resource path="Graphics/shadow_for_dialogs.png" type="Texture" id=8]
-[ext_resource path="CustomFileDialog.tscn" type="PackedScene" id=9]
-[ext_resource path="Graphics/center_button_over.png" type="Texture" id=10]
-[ext_resource path="Graphics/ok_button_over.png" type="Texture" id=11]
-[ext_resource path="Graphics/arrow_decoration_1.png" type="Texture" id=12]
-[ext_resource path="Graphics/arrow_decoration_2.png" type="Texture" id=13]
-[ext_resource path="Graphics/cancel_button_normal.png" type="Texture" id=14]
-[ext_resource path="Graphics/dialog_selector.png" type="Texture" id=15]
-[ext_resource path="Graphics/ok_button_normal.png" type="Texture" id=16]
-[ext_resource path="Graphics/cancel_button_over.png" type="Texture" id=17]
-[ext_resource path="Graphics/arrow_down_button_over.png" type="Texture" id=18]
-[ext_resource path="Graphics/arrow_down_button_disabled.png" type="Texture" id=19]
-[ext_resource path="Graphics/arrow_down_button_normal.png" type="Texture" id=20]
-[ext_resource path="Graphics/paste_image_button_disabled.png" type="Texture" id=21]
-[ext_resource path="Graphics/paste_image_button_over.png" type="Texture" id=22]
-[ext_resource path="Graphics/paste_image_button_normal.png" type="Texture" id=23]
-[ext_resource path="Graphics/arrow_up_button_disabled.png" type="Texture" id=24]
-[ext_resource path="Graphics/arrow_up_button_over.png" type="Texture" id=25]
-[ext_resource path="Graphics/arrow_up_button_normal.png" type="Texture" id=26]
-[ext_resource path="Fonts/KOMIKAX_.ttf" type="DynamicFontData" id=27]
-[ext_resource path="Graphics/animation_button_disabled.png" type="Texture" id=28]
-[ext_resource path="Graphics/animation_button_over.png" type="Texture" id=29]
-[ext_resource path="Graphics/animation_button_normal.png" type="Texture" id=30]
-[ext_resource path="Graphics/error_icon.png" type="Texture" id=31]
-[ext_resource path="Graphics/loading.png" type="Texture" id=32]
-[ext_resource path="Graphics/edit_button_disabled.png" type="Texture" id=33]
-[ext_resource path="Graphics/edit_button_over.png" type="Texture" id=34]
-[ext_resource path="Graphics/edit_button_normal.png" type="Texture" id=35]
-[ext_resource path="Graphics/icon_collision_complex.png" type="Texture" id=36]
-[ext_resource path="Graphics/icon_collision_simple.png" type="Texture" id=37]
-[ext_resource path="Graphics/icon_no_collision.png" type="Texture" id=38]
-
-[sub_resource type="DynamicFont" id=1]
-size = 13
-outline_size = 1
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 27 )
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/center_button_normal.png" type="Texture" id=1]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/CreateAutoTile.gd" type="Script" id=2]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/custom_scrollbar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/cursors.png" type="Texture" id=4]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/theme.tres" type="Theme" id=5]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/canvas_background.png" type="Texture" id=6]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/background1.png" type="Texture" id=7]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/shadow_for_dialogs.png" type="Texture" id=8]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/CustomFileDialog.tscn" type="PackedScene" id=9]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/center_button_over.png" type="Texture" id=10]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/ok_button_over.png" type="Texture" id=11]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/arrow_decoration_1.png" type="Texture" id=12]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/arrow_decoration_2.png" type="Texture" id=13]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/cancel_button_normal.png" type="Texture" id=14]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/dialog_selector.png" type="Texture" id=15]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/ok_button_normal.png" type="Texture" id=16]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/cancel_button_over.png" type="Texture" id=17]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/arrow_down_button_over.png" type="Texture" id=18]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/arrow_down_button_disabled.png" type="Texture" id=19]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/arrow_down_button_normal.png" type="Texture" id=20]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/paste_image_button_disabled.png" type="Texture" id=21]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/paste_image_button_over.png" type="Texture" id=22]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/paste_image_button_normal.png" type="Texture" id=23]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/arrow_up_button_disabled.png" type="Texture" id=24]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/arrow_up_button_over.png" type="Texture" id=25]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/arrow_up_button_normal.png" type="Texture" id=26]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Fonts/KOMIKAX_.ttf" type="DynamicFontData" id=27]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/animation_button_disabled.png" type="Texture" id=28]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/animation_button_over.png" type="Texture" id=29]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/animation_button_normal.png" type="Texture" id=30]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/error_icon.png" type="Texture" id=31]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/loading.png" type="Texture" id=32]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/edit_button_disabled.png" type="Texture" id=33]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/edit_button_over.png" type="Texture" id=34]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/edit_button_normal.png" type="Texture" id=35]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/icon_collision_complex.png" type="Texture" id=36]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/icon_collision_simple.png" type="Texture" id=37]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Graphics/icon_no_collision.png" type="Texture" id=38]
+[ext_resource path="res://addons/RPG_maker_Autotile2_3x3/Fonts/normal.tres" type="DynamicFont" id=39]
 
 [sub_resource type="InputEventKey" id=2]
 pressed = true
@@ -556,7 +551,7 @@ margin_left = 20.0
 margin_top = 40.0
 margin_right = -20.0
 margin_bottom = -52.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 39 )
 max_text_lines = 5
 __meta__ = {
 "_edit_use_anchors_": false
@@ -584,7 +579,6 @@ margin_top = 344.0
 margin_right = 418.0
 margin_bottom = 648.0
 __meta__ = {
-"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
@@ -618,19 +612,18 @@ margin_top = 40.0
 margin_right = -8.0
 margin_bottom = 48.0
 mouse_default_cursor_shape = 2
-text = "AUTOTILE XP"
-items = [ "AUTOTILE XP", null, false, 0, null, "AUTOTILE VXACE - FLOOR", null, false, 1, null, "AUTOTILE VXACE - WALL", null, false, 2, null, "AUTOTILE VXACE - WATERFALL", null, false, 3, null, "AUTOTILE MV - FLOOR", null, false, 4, null, "AUTOTILE MV - WALL", null, false, 5, null, "AUTOTILE MV - WATERFALL", null, false, 6, null, "CUSTOM AUTOTILE", null, false, 7, null, "SINGLE TILE", null, false, 8, null ]
-selected = 0
+text = "AUTOTILE MV WATERFALL"
+items = [ "AUTOTILE XP", null, false, 0, null, "AUTOTILE VXACE FLOOR", null, false, 1, null, "AUTOTILE VXACE WALL", null, false, 2, null, "AUTOTILE VXACE WATERFALL", null, false, 3, null, "AUTOTILE MV FLOOR", null, false, 4, null, "AUTOTILE MV WALL", null, false, 5, null, "AUTOTILE MV WATERFALL", null, false, 6, null, "CUSTOM AUTOTILE", null, false, 7, null, "SINGLE TILE", null, false, 8, null ]
+selected = 6
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="title2" type="Label" parent="AutoTileConfig"]
-margin_left = 20.0
-margin_top = 88.0
-margin_right = 155.0
-margin_bottom = 129.0
-rect_scale = Vector2( 0.8, 0.5 )
+margin_left = 3.0
+margin_top = 71.0
+margin_right = 138.0
+margin_bottom = 112.0
 custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "PREVIEW"
 align = 1
@@ -648,13 +641,15 @@ margin_right = 128.0
 margin_bottom = 96.0
 expand = true
 stretch_mode = 7
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="columns" type="Label" parent="AutoTileConfig"]
 margin_left = 144.0
 margin_top = 72.0
 margin_right = 267.0
 margin_bottom = 113.0
-rect_scale = Vector2( 0.8, 1 )
 text = "columns:"
 valign = 1
 __meta__ = {
@@ -667,6 +662,9 @@ margin_right = 74.0
 margin_bottom = 64.0
 rect_scale = Vector2( 1.4, 1.2 )
 editable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="rows" type="Label" parent="AutoTileConfig"]
 margin_left = 269.0
@@ -686,13 +684,15 @@ margin_right = 74.0
 margin_bottom = 64.0
 rect_scale = Vector2( 1.2, 1.2 )
 editable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="size_tiles" type="Label" parent="AutoTileConfig"]
 margin_left = 144.0
-margin_top = 155.0
+margin_top = 141.0
 margin_right = 314.0
-margin_bottom = 196.0
-rect_scale = Vector2( 0.952662, 0.525765 )
+margin_bottom = 182.0
 custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "Size of tiles:"
 valign = 1
@@ -702,9 +702,9 @@ __meta__ = {
 
 [node name="tile_width" type="Label" parent="AutoTileConfig"]
 margin_left = 144.0
-margin_top = 168.0
+margin_top = 172.0
 margin_right = 233.0
-margin_bottom = 209.0
+margin_bottom = 213.0
 text = "width:"
 valign = 1
 __meta__ = {
@@ -722,12 +722,15 @@ min_value = 1.0
 max_value = 3840.0
 value = 1.0
 editable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="tile_height" type="Label" parent="AutoTileConfig"]
 margin_left = 269.0
-margin_top = 168.0
+margin_top = 172.0
 margin_right = 363.0
-margin_bottom = 209.0
+margin_bottom = 213.0
 text = "height:"
 valign = 1
 __meta__ = {
@@ -747,6 +750,9 @@ min_value = 1.0
 max_value = 3840.0
 value = 1.0
 editable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="tile_layout" type="Label" parent="AutoTileConfig"]
 margin_left = 25.0
@@ -773,6 +779,9 @@ disabled = true
 text = "Old Style"
 items = [ "Old Style", null, false, 0, null, "New Style", null, false, 1, null ]
 selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="OptionButton2" type="OptionButton" parent="AutoTileConfig/tile_layout"]
 margin_left = 245.0
@@ -789,6 +798,9 @@ disabled = true
 text = "Floor"
 items = [ "Floor", null, false, 0, null, "Wall", null, false, 1, null, "Waterfall", null, false, 2, null ]
 selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="SelectedImage" type="Panel" parent="."]
 margin_left = 404.0
@@ -983,8 +995,8 @@ margin_left = 20.0
 margin_top = 40.0
 margin_right = -49.0
 margin_bottom = -52.0
+custom_fonts/font = ExtResource( 39 )
 custom_styles/cursor = SubResource( 5 )
-custom_fonts/font = SubResource( 1 )
 select_mode = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1098,11 +1110,9 @@ __meta__ = {
 }
 
 [node name="title" type="Label" parent="Panel"]
-anchor_right = 1.0
 margin_top = -44.0
 margin_right = 85.0
-rect_scale = Vector2( 0.647784, 1.11199 )
-custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+custom_colors/font_color = Color( 0.380392, 0.827451, 0.960784, 1 )
 text = "Current Selection"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1170,6 +1180,7 @@ margin_right = 2.0
 margin_bottom = 78.0
 hint_tooltip = "converts the current image to a new tilemap"
 mouse_default_cursor_shape = 2
+custom_colors/font_color = Color( 1, 0, 0, 1 )
 disabled = true
 text = "Select Fast Export Preset"
 clip_text = true
@@ -1191,10 +1202,9 @@ __meta__ = {
 }
 
 [node name="title" type="Label" parent="Panel2"]
-anchor_right = 1.0
-margin_top = -44.0
-margin_right = 18.0
-rect_scale = Vector2( 0.9, 1.2 )
+margin_top = -35.0
+margin_right = 122.0
+margin_bottom = 9.0
 custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "Preview Tile"
 align = 1
@@ -1251,21 +1261,24 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Panel3"]
-margin_left = 13.0
-margin_top = 3.99994
-margin_right = 256.0
-margin_bottom = 44.9999
+margin_left = 3.0
+margin_top = 11.9999
+margin_right = 246.0
+margin_bottom = 52.9999
 text = "Save Autotiles in:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label2" type="Label" parent="Panel3"]
-margin_left = 13.0
-margin_top = 46.9999
-margin_right = 256.0
-margin_bottom = 87.9999
+margin_left = 4.0
+margin_top = 51.9999
+margin_right = 247.0
+margin_bottom = 92.9999
 text = "Save Tileset in:"
 
 [node name="autotiles_folder" type="LineEdit" parent="Panel3"]
-margin_left = 265.0
+margin_left = 315.0
 margin_top = 9.0
 margin_right = 785.0
 margin_bottom = 43.0
@@ -1282,10 +1295,10 @@ __meta__ = {
 }
 
 [node name="tileset_folder" type="LineEdit" parent="Panel3"]
-margin_left = 265.0
-margin_top = 50.9999
+margin_left = 315.0
+margin_top = 51.0
 margin_right = 785.0
-margin_bottom = 84.9999
+margin_bottom = 85.0
 hint_tooltip = "Folder where you go to save the Tilesets Resources.
 
 After pressing the save button you can specify the
@@ -1309,7 +1322,8 @@ After pressing the save button you can specify the
 names of the tilesets and tilemaps to be saved"
 mouse_default_cursor_shape = 2
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="Panel3/select_autotiles_folder_Button"]
@@ -1431,7 +1445,7 @@ visible = false
 margin_left = 635.0
 margin_top = 336.0
 margin_right = 990.0
-margin_bottom = 561.0
+margin_bottom = 657.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1513,10 +1527,10 @@ margin_bottom = 154.0
 text = "%"
 
 [node name="Label3" type="Label" parent="create_autotile_dialog"]
-margin_left = 15.0
-margin_top = 151.0
-margin_right = 263.0
-margin_bottom = 192.0
+margin_left = 14.0
+margin_top = 159.0
+margin_right = 262.0
+margin_bottom = 200.0
 text = "Occlusion"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1532,11 +1546,31 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Label5" type="Label" parent="create_autotile_dialog"]
+margin_left = 14.0
+margin_top = 233.0
+margin_right = 262.0
+margin_bottom = 274.0
+text = "Navigation"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckButton2" type="CheckButton" parent="create_autotile_dialog"]
+margin_top = 261.0
+margin_right = 76.0
+margin_bottom = 301.0
+hint_tooltip = "Occludes light cast by a Light2D, casting shadows."
+mouse_default_cursor_shape = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="close_button" type="TextureButton" parent="create_autotile_dialog"]
 margin_left = 273.0
-margin_top = 184.0
+margin_top = 263.0
 margin_right = 305.0
-margin_bottom = 216.0
+margin_bottom = 295.0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 14 )
 texture_normal = ExtResource( 14 )
@@ -1544,9 +1578,9 @@ texture_hover = ExtResource( 17 )
 
 [node name="ok_button" type="TextureButton" parent="create_autotile_dialog"]
 margin_left = 313.0
-margin_top = 184.0
+margin_top = 263.0
 margin_right = 345.0
-margin_bottom = 216.0
+margin_bottom = 295.0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 16 )
 texture_normal = ExtResource( 16 )
@@ -1557,7 +1591,7 @@ visible = false
 margin_left = 492.0
 margin_top = 432.0
 margin_right = 845.0
-margin_bottom = 717.0
+margin_bottom = 824.0
 hint_tooltip = "When collision type is equal to \"simple collision\"
 you can set what percentage of the tile
 will have collision starting from the bottom to up."
@@ -1649,9 +1683,9 @@ __meta__ = {
 
 [node name="Label4" type="Label" parent="edit_autotile_dialog"]
 margin_left = 15.0
-margin_top = 140.0
+margin_top = 157.0
 margin_right = 328.0
-margin_bottom = 181.0
+margin_bottom = 198.0
 rect_scale = Vector2( 0.9, 1 )
 text = "Occlusion"
 __meta__ = {
@@ -1659,22 +1693,38 @@ __meta__ = {
 }
 
 [node name="CheckButton" type="CheckButton" parent="edit_autotile_dialog"]
-margin_top = 172.0
+margin_top = 189.0
 margin_right = 76.0
-margin_bottom = 212.0
+margin_bottom = 229.0
+
+[node name="Label6" type="Label" parent="edit_autotile_dialog"]
+margin_left = 15.0
+margin_top = 219.0
+margin_right = 328.0
+margin_bottom = 260.0
+rect_scale = Vector2( 0.9, 1 )
+text = "Navigation"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckButton2" type="CheckButton" parent="edit_autotile_dialog"]
+margin_top = 251.0
+margin_right = 76.0
+margin_bottom = 291.0
 
 [node name="Label2" type="Label" parent="edit_autotile_dialog"]
 margin_left = 15.0
-margin_top = 199.0
+margin_top = 300.0
 margin_right = 263.0
-margin_bottom = 240.0
+margin_bottom = 341.0
 text = "Animation Speed"
 
 [node name="SpinBox" type="SpinBox" parent="edit_autotile_dialog"]
 margin_left = 11.0
-margin_top = 242.0
+margin_top = 343.0
 margin_right = 146.0
-margin_bottom = 276.0
+margin_bottom = 377.0
 hint_tooltip = "Occludes light cast by a Light2D, casting shadows."
 min_value = 0.01
 max_value = 9999.0
@@ -1683,9 +1733,9 @@ value = 0.01
 
 [node name="close_button" type="TextureButton" parent="edit_autotile_dialog"]
 margin_left = 310.0
-margin_top = 243.0
+margin_top = 344.0
 margin_right = 342.0
-margin_bottom = 275.0
+margin_bottom = 376.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 14 )
@@ -1694,9 +1744,9 @@ texture_hover = ExtResource( 17 )
 
 [node name="ok_button" type="TextureButton" parent="edit_autotile_dialog"]
 margin_left = 269.0
-margin_top = 243.0
+margin_top = 344.0
 margin_right = 301.0
-margin_bottom = 275.0
+margin_bottom = 376.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 16 )
@@ -1894,8 +1944,12 @@ margin_right = 213.76
 margin_bottom = 50.8799
 allow_external_files = true
 
+[node name="Label" parent="CustomFileDialog/PanelBottom" index="3"]
+custom_fonts/font = ExtResource( 39 )
+
 [node name="path_LineEdit" parent="CustomFileDialog/PanelBottom" index="4"]
 margin_right = 6.12799
+custom_fonts/font = ExtResource( 39 )
 
 [node name="drive_select_option_button" parent="CustomFileDialog/PanelBottom" index="5"]
 visible = false
@@ -1903,6 +1957,9 @@ margin_left = -55.0
 margin_right = -1.0
 margin_bottom = -220.5
 rect_scale = Vector2( 1, 0.9 )
+
+[node name="file_LineEdit" parent="CustomFileDialog/PanelBottom" index="7"]
+custom_fonts/font = ExtResource( 39 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "CursorsBlink"
@@ -1930,7 +1987,6 @@ material = SubResource( 23 )
 position = Vector2( 494, 383 )
 frames = SubResource( 84 )
 animation = "loading"
-frame = 11
 speed_scale = 10.0
 playing = true
 
@@ -1966,6 +2022,7 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 0.87451 )
 
 [node name="WindowDialog" type="WindowDialog" parent="ultimate_revision_dialog"]
+visible = true
 margin_left = 153.0
 margin_top = 184.0
 margin_right = 823.0
@@ -1994,12 +2051,12 @@ rect_min_size = Vector2( 240, 450 )
 
 [node name="Label" type="Label" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/VBoxContainer"]
 margin_right = 240.0
-margin_bottom = 41.0
+margin_bottom = 25.0
 text = "TILES"
 align = 1
 
 [node name="ItemList" type="ItemList" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/VBoxContainer"]
-margin_top = 45.0
+margin_top = 29.0
 margin_right = 240.0
 margin_bottom = 454.0
 size_flags_vertical = 3
@@ -2073,9 +2130,9 @@ __meta__ = {
 
 [node name="Panel" type="Panel" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel"]
 margin_left = 28.0
-margin_top = 290.5
+margin_top = 281.0
 margin_right = 384.0
-margin_bottom = 437.5
+margin_bottom = 448.0
 __meta__ = {
 "_edit_group_": true
 }
@@ -2141,9 +2198,9 @@ __meta__ = {
 
 [node name="Label8" type="Label" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
 margin_left = 12.0
-margin_top = 74.4998
+margin_top = 78.0
 margin_right = 325.0
-margin_bottom = 115.5
+margin_bottom = 104.0
 rect_scale = Vector2( 0.9, 1 )
 text = "Occlusion"
 __meta__ = {
@@ -2152,9 +2209,29 @@ __meta__ = {
 
 [node name="CheckButton2" type="CheckButton" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
 margin_left = -3.0
-margin_top = 106.5
+margin_top = 95.5
 margin_right = 73.0
-margin_bottom = 146.5
+margin_bottom = 135.5
+
+[node name="Label9" type="Label" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
+margin_left = 59.0
+margin_top = 121.0
+margin_right = 372.0
+margin_bottom = 146.0
+rect_scale = Vector2( 0.9, 1 )
+text = "Navigation"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckButton3" type="CheckButton" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
+margin_left = 50.0
+margin_top = 133.5
+margin_right = 126.0
+margin_bottom = 173.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="TextureButton" type="TextureButton" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel"]
 margin_left = 369.0
@@ -2170,6 +2247,7 @@ __meta__ = {
 }
 
 [node name="HINTS" type="CanvasLayer" parent="."]
+
 [connection signal="tree_exiting" from="." to="." method="_on_CreateAutoTile_tree_exiting"]
 [connection signal="item_selected" from="ImageList/list" to="." method="_on_list_item_selected"]
 [connection signal="button_up" from="ImageList/Button" to="." method="_on_ImageListButton_button_up"]
@@ -2227,6 +2305,7 @@ __meta__ = {
 [connection signal="item_selected" from="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel/OptionButton2" to="." method="_on_ultimate_collision_type_OptionButton_item_selected"]
 [connection signal="value_changed" from="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel/SpinBox3" to="." method="_on_ultimate_percent_SpinBox_value_changed"]
 [connection signal="toggled" from="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel/CheckButton2" to="." method="_on_ultimate_occlusion_CheckButton_toggled"]
+[connection signal="toggled" from="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel/CheckButton3" to="." method="_on_ultimate_navigation_CheckButton_toggled"]
 [connection signal="button_down" from="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/TextureButton" to="." method="_on_ultimate_close_button_down"]
 
 [editable path="CustomFileDialog"]
