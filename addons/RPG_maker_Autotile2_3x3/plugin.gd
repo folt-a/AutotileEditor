@@ -20,7 +20,7 @@ func clickedButton(ud):
 	ProjectSettings.set_setting("application/config/name", "Create Autotiles by Newold")
 	ProjectSettings.save()
 	var executable = OS.get_executable_path()
-	var array = ["res://Addons/RPG_maker_Autotile2_3x3/CreateAutoTile.tscn"]
+	var array = ["res://addons/RPG_maker_Autotile2_3x3/CreateAutoTile.tscn"]
 	var args = PoolStringArray(array)
 	OS.execute(executable, args)
 	ProjectSettings.set_setting("application/config/icon", _icon)
