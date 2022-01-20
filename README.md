@@ -1,3 +1,52 @@
+このリポジトリはGodotのアドオン[AutotileEditor](https://github.com/newold3/AutotileEditor)をForkして、
+日本語翻訳や一部機能を追加したものです。
+
+# AutotilesEditor
+
+RPGツクール形式のオートタイル画像をGodotのTileMap、Tilesetsに変換できます。
+
+水面のアニメーションオートタイルにも対応しています
+
+![GitHub Logo](screenshots/preview1.png)
+
+## 対応バージョン
+
+Plugin version: Godot v3.4
+
+## 機能特徴
+
+* 1クリックでタイルセット全体を作成
+* 個々のオートタイルを作成
+* オートタイルアニメーションを作成
+* シングルタイル/シングルアニメーションタイルを作成
+
+## インストール
+
+通常のアドオンと同じ方法でインストールします。
+
+1. ↑のCode→Downloadボタンを押してこのリポジトリをダウンロードし、解凍する。
+2. Godot プロジェクト内の **addons** ディレクトリへ、  このリポジトリの **addons** ディレクトリに入っている **RPG_maker_Autotile2_3x3** ディレクトリをコピーする。
+3. Godot エディタで プロジェクト→プロジェクト設定→プラグインタブを開き、  **Create Autotile from RPG Makers tilesets** のステータス欄の☑にチェックを入れて有効にする。
+4. プロジェクト→ツール→**Autotile Editor** が追加されているのでクリックする。  
+または、**res://addons/RPG_maker_Autotile2_3x3/CreateAutoTile.tscn**をシーン実行する。
+
+## 更新
+
+* 01/20/2022
+	* 日本語翻訳を追加
+	* オート床タイルのパレットサムネイル用の部分が塗られてしまう問題を修正(floor.dat)
+	* Navigationを作成できるように追加
+
+## ライセンス
+
+MIT License.
+
+---
+
+↓Fork元Readme原文
+
+---
+
 # AutotilesEditor
 
 Convert tilesets, autotiles and autotiles animated from RPG Maker to tilesets of Godot
